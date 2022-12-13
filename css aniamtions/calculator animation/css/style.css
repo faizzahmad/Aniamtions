@@ -1,0 +1,158 @@
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .parent {
+            background-color: rgb(48, 248, 182);
+            height: 100vh;
+            width: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-family: 'Titillium Web', sans-serif;
+        }
+
+        .child {
+            background-color: rgb(49, 49, 49);
+            height: 300px;
+            width: 600px;
+            border-radius: 20px;
+            box-shadow: 3px 3px 5px white;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .header {
+            color: rgb(48, 248, 182);
+            margin-left: 30px;
+            border-left: 5px solid rgb(48, 248, 182);
+            margin-top: 80px;
+            padding: 10px;
+            animation-name: faiz;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+
+        }
+
+        @keyframes faiz {
+            from {
+                height: 2px;
+            }
+
+            to {
+                height: 120px;
+            }
+        }
+
+        form {
+            margin-top: 50px;
+            margin-left: 0px;
+        }
+
+        input[type="text"] {
+            border: none;
+            background-color: transparent;
+            padding-bottom: 5px;
+            text-align: center;
+            font-size: 14px;
+            color: rgb(255, 255, 255);
+            border-bottom: 2px solid rgb(255, 255, 255);
+            animation-name: inputtag;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            animation-delay: 1s;
+        }
+
+        @keyframes inputtag {
+            from {
+                width: 2px;
+            }
+
+            to {
+                width: 170px;
+            }
+        }
+
+        ::placeholder {
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+        }
+
+        input[type="text"]:focus {
+            outline: none;
+            color: white;
+            font-weight: bold;
+            background-color: transparent;
+
+        }
+
+        select {
+            background-color: white;
+            color: black;
+            border: 2px solid white;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 0px 30px;
+            border-radius: 7px;
+            animation-name: inputtag;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        .btn1 {
+            background-color: rgb(29, 197, 147);
+            padding: 10px 20px;
+            border-radius: 6px;
+            border: 1px solid rgb(29, 197, 147);
+            border: none;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .btn1:hover {
+            background-color: transparent;
+            color: rgb(29, 197, 147);
+            border: 1px solid rgb(29, 197, 147);
+        }
+
+        #para {
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+            margin-top: 30px;
+            margin-left: 0px;
+            text-align: center;
+            border-bottom: 2px solid rgb(48, 248, 182);
+            margin-bottom: 10px;
+            animation-name: result;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes result {
+            from {
+                width: 0px;
+            }
+
+            to {
+                width: 120px;
+            }
+        }
+
+        .content2{
+            margin-left: 100px
+        }
